@@ -83,6 +83,12 @@ public class CpuController {
         return null;
     }
 
+    @ApiOperation(value = "测试", notes = "测试")
+    @GetMapping("/test")
+    @ResponseBody
+    public String test() {
+        return "success";
+    }
 
 
 
