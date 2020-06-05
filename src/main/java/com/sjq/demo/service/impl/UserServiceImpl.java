@@ -1,9 +1,10 @@
-package com.sjq.demo.service;
+package com.sjq.demo.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.sjq.demo.Utils.PageResult;
 import com.sjq.demo.mapper.UserMapper;
+import com.sjq.demo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,7 +23,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public List getUserListWhere(int bs) {
+    public List getUserListWhere(String bs) {
         return userMapper.getUserListWhere(bs);
     }
 

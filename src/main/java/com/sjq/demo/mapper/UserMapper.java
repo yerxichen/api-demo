@@ -48,17 +48,16 @@ public interface UserMapper extends BaseMapper<UserEntity> {
     @Results(value = {
             @Result(column = "sex", property = "showSex", jdbcType = JdbcType.VARCHAR, one = @One(select = "com.sjq.demo.mapper.UserMapper.getXb"))
     })
-    List<Map<String, String>> getUserListWhere(@Param("bs") int bs);
+    List<Map<String, String>> getUserListWhere(@Param("bs") String bs);
 
 
     class BuildUserSql{
-        public String getUserListWhereSql(int bs){
+        public String getUserListWhereSql(String bs){
             return new SQL(){{
                 SELECT("*");
                 FROM("t_user");
-                if (bs==1){
-                    WHERE("sex=1");
-                }
+                WHERE("sex=#{bs}");
+
             }}.toString();
         }
     }

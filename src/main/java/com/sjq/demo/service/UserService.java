@@ -9,7 +9,7 @@ import java.util.Map;
 public interface UserService {
 
     List getUserList();
-    List getUserListWhere(int bs);
+    List getUserListWhere(String bs);
 
     PageResult getUserByPage(int page, int size);
 }
