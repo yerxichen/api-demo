@@ -15,5 +15,6 @@ public class UserEntity {
     private String sex;
     private int age;
     private String job;
+    private String password;
 
 }

@@ -14,15 +14,15 @@ public interface ShiroService {
 
     /**
      * 根据用户id查询角色
-     * @param id
+     * @param userId
      * @return
      */
-    List<String> getRoleByUserId(int id);
+    List<String> getRoleByUserId(String userId);
 
     /**
      * 根据用户id查询权限
-     * @param id
+     * @param userId
      * @return
      */
-    List<String> getPermissionByUserId(int id);
+    List<String> getPermissionByUserId(String userId);
 }

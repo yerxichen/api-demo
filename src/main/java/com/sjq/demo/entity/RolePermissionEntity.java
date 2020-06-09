@@ -7,6 +7,6 @@ import lombok.Data;
 @TableName("t_role_permission")
 public class RolePermissionEntity {
 
-    private String role;
-    private String permission;
+    private String roleId;
+    private String permissionId;
 }

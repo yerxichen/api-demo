@@ -8,6 +8,6 @@ import lombok.Data;
 @TableName("t_user_role")
 public class UserRoleEntity {
 
-    private String user;
-    private String role;
+    private String userId;
+    private String roleId;
 }
