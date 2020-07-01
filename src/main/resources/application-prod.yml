@@ -11,7 +11,7 @@ logging:
     org.springfromework.web: info
     org.hibernate: error
   #采用相对路径方式将日志文件输出到【mylog\myspringboot.log】
-  file: D:\mylog\myspringboot.log
+  file: mylog\myspringboot.log
 
 spring:
   devtools:
