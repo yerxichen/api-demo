@@ -6,15 +6,11 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 @Data
-@TableName("t_user")
-public class UserEntity {
+@TableName("t_permission")
+public class PermissionEntity {
 
     @TableId(type = IdType.AUTO)
-    private int id;
-    private String name;
-    private String sex;
-    private int age;
-    private String job;
-    private String password;
-
+    private String id;
+    private String permission;
+    private String description;
 }

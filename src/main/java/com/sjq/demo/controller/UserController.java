@@ -39,7 +39,7 @@ public class UserController {
     @ApiOperation(value = "获取用户信息动态sql条件", notes = "获取用户信息动态sql条")
     @GetMapping("/getUserListWhere")
     @ResponseBody
-    public List<UserEntity> getUserListWhere(int bs) {
+    public List<UserEntity> getUserListWhere(String bs) {
         return userService.getUserListWhere(bs);
     }
 

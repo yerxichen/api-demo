@@ -1,17 +1,16 @@
 package com.sjq.demo.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 @Data
-@TableName("role")
+@TableName("t_role")
 public class RoleEntity {
-    @TableId
-    private String id; // 信息主键编号
-    private String rolename; // 标题
-    private String bz;
-    private Object pdf;
 
-
+    @TableId(type = IdType.AUTO)
+    private String id;
+    private String role;
+    private String description;
 }
