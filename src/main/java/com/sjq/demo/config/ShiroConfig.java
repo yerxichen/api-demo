@@ -36,6 +36,7 @@ public class ShiroConfig {
         //哪些请求可以匿名访问
         Map<String, String> filterMap = new LinkedHashMap<>();
         filterMap.put("/login/login", "anon");
+        filterMap.put("/upload/fileUpload", "anon");
         filterMap.put("/user/getUserList", "anon");
         filterMap.put("/**", "authc");
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterMap);
